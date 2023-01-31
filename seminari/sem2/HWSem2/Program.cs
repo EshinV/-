@@ -2,14 +2,52 @@
 // которая принимает на вход трёхзначное число и на 
 // выходе показывает вторую цифру этого числа
 
+Console.WriteLine("Введите трёхзначное число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+if ( 99<number && number<1000)
+{
+    int number1 = number/100; 
+    int number2 = (number - number1*100)/10;
+    Console.WriteLine(number2);
+} 
+else Console.WriteLine("Число не трёхзначное");
+
+
+
 // Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, 
 // что третьей цифры нет.
 // 645 -> 5
 // 78 -> третьей цифры нет
 // 32679 -> 6
 
+// Console.WriteLine("Введите число: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+
+// if ( 99<number && number<1000)
+// {
+//     int number1 = number/100; 
+//     int number2 = (number - number1*100)/10;
+//     Console.WriteLine(number2);
+// } 
+// else Console.WriteLine("Число не трёхзначное");
+
+
+
+
 // Задача 15: Напишите программу, которая принимает на вход цифру, 
 // обозначающую день недели, и проверяет, является ли этот день выходным.
 // 6 -> да 
 // 7 -> да 
 // 1 -> нет
+
+Console.WriteLine("Введите число означающее день недели: ");
+int answer = Convert.ToInt32(Console.ReadLine()); 
+
+if (answer > 7 || answer < 1) Console.WriteLine ("Число не верное");
+if(answer == 1 || answer == 2|| answer == 3 || answer == 4 || answer == 5) Console.WriteLine("Не выходной");
+// if() Console.WriteLine("вт");
+// if() Console.WriteLine("ср");
+// if() Console.WriteLine("чт");
+// if(day == 5) Console.WriteLine("пт");
+if(answer == 6 || answer == 7) Console.WriteLine("Выходной");
