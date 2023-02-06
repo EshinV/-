@@ -2,16 +2,16 @@
 // которая принимает на вход трёхзначное число и на 
 // выходе показывает вторую цифру этого числа
 
-Console.WriteLine("Введите трёхзначное число: ");
-int number = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите трёхзначное число: ");
+// int number = Convert.ToInt32(Console.ReadLine());
 
-if ( 99<number && number<1000)
-{
-    int number1 = number/100; 
-    int number2 = (number - number1*100)/10;
-    Console.WriteLine(number2);
-} 
-else Console.WriteLine("Число не трёхзначное");
+// if ( 99<number && number<1000)
+// {
+//     int number1 = number/100; 
+//     int number2 = (number - number1*100)/10;
+//     Console.WriteLine(number2);
+// } 
+// else Console.WriteLine("Число не трёхзначное");
 
 
 
