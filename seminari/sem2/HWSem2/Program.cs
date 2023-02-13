@@ -8,7 +8,7 @@ int number = Convert.ToInt32(Console.ReadLine());
 
 if ( 99<number && number<1000)
 {
-    int number1 = number/100; 
+    int number1 = number/100; //другой варинат запсиси :int number1 = (number/10)%10; 
     int number2 = (number - number1*100)/10;
     Console.WriteLine(number2);
 } 
@@ -16,8 +16,7 @@ else Console.WriteLine("Число не трёхзначное");
 
 
 
-// Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, 
-// что третьей цифры нет.
+// Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 // 645 -> 5
 // 78 -> третьей цифры нет
 // 32679 -> 6
@@ -34,7 +33,6 @@ while (Number13>999)
     Number13 = Number13 / 10;
 }
     Console.WriteLine($"Третья цифра - {Number13%10}");
-
 
 
 
