@@ -8,11 +8,11 @@ if (numA<1)
 }
 else
 {
-    int numsum = 0;
+    int sum = 0;
     for (int i = 1; i <= numA; i++)
     {
-   numsum += i;//numsum=numsum+i
+   sum += i;//numsum=numsum+i
     }
-    Console.WriteLine($"сумма = {numsum}");
+    Console.WriteLine($"сумма = {sum}");
 }
 
