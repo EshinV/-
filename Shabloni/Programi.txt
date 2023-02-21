@@ -1,0 +1,26 @@
+﻿
+//Метод ввода числа:
+
+int SetNumber(string numberName)
+{
+    Console.WriteLine($"Enter number {numberName}:");
+    int num = Convert.ToInt32(Console.ReadLine());
+    return num;
+}
+
+int TestNum =  SetNumber("test");
+Console.WriteLine(TestNum);
+
+Создание массива:
+int[] array = GetArray(12, -9, 9); // первая цифра количесвво размеров, мин значение, мах значение
+
+ int[] GetArray(int size, int minValue, int maxValue)
+ {
+     int[] res = new int[size]; //new int - создание массива размером size
+
+     for (int i = 0; i < size; i++)
+     {
+        res[i] = new Random().Next(minValue, maxValue + 1); //+1 так последнее значение не учитывается
+     }
+    return res;
+ }
