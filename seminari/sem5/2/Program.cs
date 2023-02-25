@@ -1,6 +1,6 @@
 ﻿// Задача 32: Напишите программу замена элементов массива: положительные элементы замените на соответствующие отрицательные, и наоборот.
 // [-4, -8, 8, 2] -> [4, 8, -8, -2]
-// Console.WriteLine("Задача 32");
+Console.WriteLine("Задача 32");
 int[] array32 = GetArray(4, -9, 9); // первая цифра количесвво размеров, мин значение, мах значение
 int[] GetArray(int size, int minValue, int maxValue)
  {
@@ -13,13 +13,13 @@ int[] GetArray(int size, int minValue, int maxValue)
     return res;
  }
 
-// Console.WriteLine(String.Join(" ", array32)); // обеденяет массив в одну строку и разделяет побелом
+Console.WriteLine(String.Join(" ", array32)); // обеденяет массив в одну строку и разделяет побелом
 
-// for (int i = 0; i < array32.Length; i++)
-// {
-//     array32[i]=array32[i]*(-1);
-//     Console.Write($" {array32[i]}");
-// }
+for (int i = 0; i < array32.Length; i++)
+{
+    array32[i]=array32[i]*(-1);
+    Console.Write($" {array32[i]}");
+}
 
 
 
